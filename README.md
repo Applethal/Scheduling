@@ -23,3 +23,4 @@ Updated the code. Adding a job named "Pause" or "pause" will cause the weight/St
 
 <img src="https://pbs.twimg.com/media/FLt0yAhXIAEhiH4?format=jpg" alt="Cat with a hat" width="200"/>
 
+What's next ? I will create an optimization problem out of this idea. 
