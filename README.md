@@ -21,4 +21,4 @@ What I plan to do soon is to make it so that adding a task named "Pause/pause" w
 
 Updated the code. Adding a job named "Pause" or "pause" will cause the weight/Stamina to revert back to 1. I have no music to share for now, how about I share a small picture that I love ? 
 
-![Cat with a hat](https://pbs.twimg.com/media/FLt0yAhXIAEhiH4?format=jpg&name=large)
+![Cat with a hat](https://pbs.twimg.com/media/FLt0yAhXIAEhiH4?format=jpg)
