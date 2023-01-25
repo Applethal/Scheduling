@@ -25,7 +25,7 @@ Weight = 1
 for i in range(Number_of_jobs):
 
     Weighted_Makespan += Weight * Job_dict[i].get("Duration")
-    if "Pause" in Job_dict[i]["Job"]:
+    if "Pause" or "pause" in Job_dict[i]["Job"]:
         Weight = 1
     else:
         Weight -= 0.1
