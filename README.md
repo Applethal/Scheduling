@@ -15,3 +15,10 @@ The weighted makespan represents a score that a human achieves after performing 
 
 What I plan to do soon is to make it so that adding a task named "Pause/pause" will restore the weight's value to 1, and add a function that allows a schedule netting the best performance.
 [While writing this update, I was listening to Analyzing Evil: Warden Samuel Norton From The Shawshank Redemption, an analysis of an antagonist that comes from one of my favourite movies](https://www.youtube.com/watch?v=07sIviggH8M)
+
+
+## 25/01/2023
+
+Updated the code. Adding a job named "Pause" or "pause" will cause the weight/Stamina to revert back to 1. I have no music to share for now, how about I share a small picture that I love ? 
+
+![Cat with a hat](https://pbs.twimg.com/media/FLt0yAhXIAEhiH4?format=jpg&name=large)
