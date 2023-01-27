@@ -11,6 +11,12 @@ for i in range(Number_of_jobs):
     job_dict["Duration"] = Job_duration
     Job_dict[i] = job_dict
 
+Jobs_sorted = sorted(Job_dict, key=lambda i: Job_dict[i]["Duration"], reverse=True)
+
+#### due date
+
+due_date = int(input("Please enter the deadline subject to the activities that you wish to acomplish"))
+
 ###### Makespan
 Makespan = 0
 for i in range(Number_of_jobs):
@@ -29,6 +35,10 @@ for i in range(Number_of_jobs):
         Weight = 1
     else:
         Weight -= 0.1
+
+####def Schedule_due_date (due_date):
+
+###print(Jobs_sorted)
 
 print("The given schedule is", Schedule, "with a makespan of", Makespan)
 print("The weighted completion time of the schedule is ", Weighted_Makespan)
