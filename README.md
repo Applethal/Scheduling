@@ -24,3 +24,7 @@ Updated the code. Adding a job named "Pause" or "pause" will cause the weight/St
 <img src="https://pbs.twimg.com/media/FLt0yAhXIAEhiH4?format=jpg" alt="Cat with a hat" width="200"/>
 
 What's next ? I will create an optimization problem out of this idea. 
+
+## 27/01/2023 
+
+Updated the code. A list of jobs sorted by duration in a descending manner will be printed, this will be needed much later for the optimization idea that I plan to implement, hopefully I will be able to finish it today.[On my music playlist, Jane's addiction came up while I was learning](https://www.youtube.com/watch?v=KV3ozZoQ13M)
