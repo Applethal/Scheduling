@@ -32,7 +32,7 @@ Updated the code. A list of jobs sorted by duration in a descending manner will 
 
 ## 30/01/2023
 
-Reached my first road block. Spent 2 days looking for solutions for this matter. It appears that the problem belongs to the "Online Scheduling" Categorie, which is famous for having Np-hard problems. My problem goes as follows: subject to a due date, fill your schedule in a way that maximizes the score (score is defined by the weight times the duration). Sure, looks like a knapsack problem, well guess what: let us not forget that each time you add a task/job, the weight for the next job decreases by 0.1; Taking a pause recovers the weight of the next job to its default value. A perfect replica of what how a life form with no coffee and steroids would function.
+Reached my first road block. Spent 2 days looking for solutions regarding this matter. It appears that the problem belongs to the "Online Scheduling" Categorie, which is famous for having Np-hard problems. My problem goes as follows: subject to a due date, fill your schedule in a way that maximizes the score (score is defined by the weight times the duration). Sure, looks like a knapsack problem, well guess what: let us not forget that each time you add a task/job, the weight for the next job decreases by 0.1; Taking a pause recovers the weight of the next job to its default value. A perfect replica of what how a life form with no coffee and steroids would function.
 
 I have tried to model this problem mathematically:
 
