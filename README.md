@@ -44,8 +44,8 @@ $$ X_j <= 1 (\forall j \in J) $$
 
 $$ X_p <=1 (\forall p \in J) $$
 
-$$ w_{j+1} = X_p + (X_i . (w_{j-1} - 0,1 )) (\forall J+1 \in J) $$  
+$$ w_{j+1} = X_p + (X_{j-1} . (w_{j-1} - 0,1 )) (\forall J+1 \in J) $$  
 
 
-
+$$ X_p, X_j \in \{0,1\} and w >= 0$$
 
