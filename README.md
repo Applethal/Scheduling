@@ -14,7 +14,7 @@ This project was meant to reflect a **human environement**. In scheduling theory
 The weighted makespan represents a score that a human achieves after performing all the tasks. The weight in this context represents the stamina and that defaults to 1 for all the jobs(for now); everytime a job is added, the weight of the next job will be reduced by 0,1.
 
 What I plan to do soon is to make it so that adding a task named "Pause/pause" will restore the weight's value to 1, and add a function that allows a schedule netting the best performance.
-[While writing this update, I was listening to Analyzing Evil: Warden Samuel Norton From The Shawshank Redemption, an analysis of an antagonist that comes from one of my favourite movies](https://www.youtube.com/watch?v=07sIviggH8M)
+[While writing this update, I was listening to Analyzing Evil: Warden Samuel Norton From The Shawshank Redemption, an analysis of an antagonist that comes from one of my favourite movies.](https://www.youtube.com/watch?v=07sIviggH8M)
 
 
 ## 25/01/2023
