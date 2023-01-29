@@ -41,7 +41,9 @@ $$Max \space Z: = \sum\limits_{d \in D} d_j.w_j.X_j + d_p.w_j.X_p$$
 Subject to: 
 
 $$ X_j <= 1 (\forall j \in J) $$
+
 $$ X_p <=1 (\forall p \in J) $$
+
 $$ w_{j+1} = X_p + (X_i . (w_{j-1} - 0,1 )) (\forall J+1 \in J) $$  
 
 
