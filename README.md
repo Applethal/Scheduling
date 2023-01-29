@@ -32,7 +32,7 @@ Updated the code. A list of jobs sorted by duration in a descending manner will 
 
 ## 30/01/2023
 
-Reached my first road block. Spent 2 days looking for solutions for this matter. It appears that the problem belongs to the "Online Scheduling" Categorie, which is famous for having Np-hard problems. My problem goes as follows: subject to a due date, fill your schedule in a way that maximizes the score (score is defined by the weight times the duration). Sure, looks like a knapsack problem, well guess what: let us not forget that each time you add a task/job, the weight for the next job decreases by 0.1; Taking a pause recovers the weight of the next job to its default value.
+Reached my first road block. Spent 2 days looking for solutions for this matter. It appears that the problem belongs to the "Online Scheduling" Categorie, which is famous for having Np-hard problems. My problem goes as follows: subject to a due date, fill your schedule in a way that maximizes the score (score is defined by the weight times the duration). Sure, looks like a knapsack problem, well guess what: let us not forget that each time you add a task/job, the weight for the next job decreases by 0.1; Taking a pause recovers the weight of the next job to its default value. A perfect replica of what how a life form with no coffee and steroids would function.
 
 I have tried to model this problem mathematically:
 
@@ -46,8 +46,12 @@ $$ X_p <=1 (\forall p \in J) $$
 
 $$ w_{j+1} = X_p + (X_{j-1} . (w_{j-1} - 0,1 )) (\forall J+1 \in J) $$  
 
+$$ \sum\limits_{j \in J}\sum\limits_{p \in J} X_p.d_j + X_j.d_j <= D (\forall J,p \in J) $$
 
-$$ X_p, X_j \in \{0,1\} 
+
+$$ X_p, X_j \in \{0,1\} $$
 
  $$ w >= 0$$
 
+
+The Obj. Funtion aims to maximize the score while the constraints insure the feasibility of the operation. I have tried to implement some classic branch and cut algorithms but the complexity was so high that it motivated me to go look up for some literature with the hopes to find a computationally acceptable manner. Of course Smith's ratio rule would not help here unless we had no pauses to work with, So what I did was to update the code in a way that gives you a schedule with the maximum possible score whilst ignoring the pausing mechanism.
