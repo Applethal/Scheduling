@@ -55,7 +55,7 @@ $$ \sum\limits_{j \in J}\sum\limits_{p \in J} X^k_p.d_j + X^k_j.d_j <= D \qquad 
 $$ w_p = 1  \qquad  (\forall p \in J)$$ 
 
 
-$$ X_p, X_j \in \{0,1\} $$
+$$ X^k_p, X^k_j \in \{0,1\} $$
 
  $$ w_p, w_j \geq 0$$
 
