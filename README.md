@@ -37,7 +37,7 @@ Reached my first road block. Spent 2 days looking for solutions regarding this m
 I have tried to model this problem mathematically:
 
 
-X^k_j and X^k_p are binary variables that decide on whether a job or a pause will be asociated to a position k within the permutation. The weights are denoted with the W variable. The first and second linear functions explain themselves; the third constraint concerns the next job J+1 that is inserted in the position K+1 and makes it
+X^k_j and X^k_p are binary variables that decide on whether a job or a pause will be asociated to a position k within the permutation. The weights are denoted with the W variable. The first and second linear functions explain themselves; the third constraint concerns the weight of the next job J+1 that is inserted in the position K+1 while the last one insures the insereted jobs within the permutation won't exceed the due date. 
 
 
 $$Max \space Z: = \sum\limits_{j \in J}  d_j.w^k.X^k_j + \sum\limits_{p \in J} d_p.w^k.X^k_p$$
