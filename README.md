@@ -50,7 +50,7 @@ $$ X^k_p \leq 1 \qquad (\forall p \in J) $$
 
 $$ w^{k+1}_j = X_p . w_p + (X_{j-1} . (w_{j-1} - 0,1 )) \qquad (\forall j+1 \in j) $$  
 
-$$ \sum\limits_{j \in J}\sum\limits_{p \in J} X_p.d^k_j + X^k_j.d_j <= D \qquad (\forall J,p \in J) $$
+$$ \sum\limits_{j \in J}\sum\limits_{p \in J} X^k_p.d_j + X^k_j.d_j <= D \qquad (\forall J,p \in J) $$
 
 $$ w_p = 1  \qquad  (\forall p \in J)$$ 
 
