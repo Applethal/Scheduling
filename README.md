@@ -36,22 +36,28 @@ Reached my first road block. Spent 2 days looking for solutions regarding this m
 
 I have tried to model this problem mathematically:
 
-$$Max \space Z: = \sum\limits_{d \in D} d_j.w_j.X_j + d_p.w_j.X_p$$
+
+X^k_j and X^k_p are binary variables that decide on whether a job or a pause will be asociated to a position k within the permutation. The weights are denoted with the W variable. The first and second linear functions explain themselves; the third constraint concerns the next job J+1 that is inserted in the position K+1 and makes it
+
+
+$$Max \space Z: = \sum\limits_{j \in J}  d_j.w^k.X^k_j + \sum\limits_{p \in J} d_p.w^k.X^k_p$$
 
 Subject to: 
 
-$$ X_j <= 1 (\forall j \in J) $$
+$$ X^k_j \leq 1 \qquad (\forall j \in J) $$
 
-$$ X_p <=1 (\forall p \in J) $$
+$$ X^k_p \leq 1 \qquad (\forall p \in J) $$
 
-$$ w_{j+1} = X_p + (X_{j-1} . (w_{j-1} - 0,1 )) (\forall J+1 \in J) $$  
+$$ w^{k+1}_j = X_p . w_p + (X_{j-1} . (w_{j-1} - 0,1 )) \qquad (\forall j+1 \in j) $$  
 
-$$ \sum\limits_{j \in J}\sum\limits_{p \in J} X_p.d_j + X_j.d_j <= D (\forall J,p \in J) $$
+$$ \sum\limits_{j \in J}\sum\limits_{p \in J} X_p.d^k_j + X^k_j.d_j <= D \qquad (\forall J,p \in J) $$
+
+$$ w_p = 1  \qquad  (\forall p \in J)$$ 
 
 
 $$ X_p, X_j \in \{0,1\} $$
 
- $$ w >= 0$$
+ $$ w_p, w_j \geq 0$$
 
 
 The Obj. Funtion aims to maximize the score while the constraints insure the feasibility of the operation. I have tried to implement some classic branch and cut algorithms but the complexity was so high that it motivated me to go look up for some literature with the hopes to find a computationally acceptable manner. Of course Smith's ratio rule would not help here unless we had no pauses to work with, So what I did was to update the code in a way that gives you a schedule with the maximum possible score whilst ignoring the pausing mechanism. [Eternal rest from Akira Yamaoka is one of my favourite songs, give it a try while cooking but not while coding!](https://www.youtube.com/watch?v=ekf1ttmZSao)
