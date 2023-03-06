@@ -60,4 +60,6 @@ $$ X^k_p, X^k_j \in \{0,1\} $$
  $$ w_p, w_j \geq 0$$
 
 
+** EDIT **: Project under hiatus until I find a linear function, the entire math model needs some fixing.
+
 The Obj. Funtion aims to maximize the score while the constraints insure the feasibility of the operation. I have tried to implement some classic branch and cut algorithms but the complexity was so high that it motivated me to go look up for some literature with the hopes to find a computationally acceptable manner. Of course Smith's ratio rule would not help here unless we had no pauses to work with, So what I did was to update the code in a way that gives you a schedule with the maximum possible score whilst ignoring the pausing mechanism. [Eternal rest from Akira Yamaoka is one of my favourite songs, give it a try while cooking but not while coding!](https://www.youtube.com/watch?v=ekf1ttmZSao)
